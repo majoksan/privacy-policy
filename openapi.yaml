@@ -1,0 +1,56 @@
+openapi: 3.0.0
+info:
+  title: Política de Privacidad
+  description: Política de privacidad de [tradextremadura.com]
+  version: 1.0.0
+paths:
+  /privacy-policy:
+    get:
+      summary: Obtener la política de privacidad
+      description: Retorna la política de privacidad completa
+      responses:
+        '200':
+          description: Una respuesta exitosa
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  title:
+                    type: string
+                  introduction:
+                    type: string
+                  informationCollected:
+                    type: array
+                    items:
+                      type: string
+                  usageOfInformation:
+                    type: array
+                    items:
+                      type: string
+                  security:
+                    type: string
+                  externalLinks:
+                    type: string
+                  controlOfPersonalInformation:
+                    type: array
+                    items:
+                      type: string
+                example:
+                  title: Política de Privacidad
+                  introduction: En [Tu Compañía], nos tomamos muy en serio la privacidad de nuestros usuarios...
+                  informationCollected:
+                    - Nombre y título del trabajo
+                    - Información de contacto, incluyendo dirección de correo electrónico
+                    - Información demográfica, como código postal, preferencias e intereses
+                    - Otra información relevante para encuestas y/o ofertas de clientes
+                  usageOfInformation:
+                    - Mantenimiento de registros internos.
+                    - Podemos usar la información para mejorar nuestros productos y servicios.
+                    - Periódicamente, podemos enviar correos electrónicos promocionales sobre nuevos productos...
+                    - De vez en cuando, también podemos usar su información para contactarlo para fines de investigación de mercado...
+                  security: Estamos comprometidos a garantizar que su información esté segura...
+                  externalLinks: Nuestro sitio web puede contener enlaces a otros sitios de interés...
+                  controlOfPersonalInformation:
+                    - Siempre que se le pida que complete un formulario en el sitio web, busque la casilla que puede hacer clic...
+                    - Si anteriormente ha acordado con nosotros utilizar su información personal para fines de marketing directo...
